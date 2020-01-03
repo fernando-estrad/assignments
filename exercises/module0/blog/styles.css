@@ -1,7 +1,7 @@
 .navbar {
     background-color: darkslategray;
     color: rgb(6, 202, 206);
-    position: fixed;
+    position: sticky;
     width: 100%;
     padding: 5px;
     margin: 0px;
@@ -13,4 +13,25 @@
 .contact{
     position: relative;
     left: 100px;
+}
+.feed {
+    width: 50%;
+    position: relative;
+    left: 300px;
+    top: 50px;
+    display: inline-block;
+}
+p {
+    display: inline-block;
+}
+.post1 {
+    display: inline-block;
+    bottom: 50px;
+}
+.container{
+    width: 400px;
+}
+.img1 {
+    float: left;
+    width: 175px;
 }
