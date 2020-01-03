@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+div {
+    height: 150px;
+    border: 10px solid white;
+}
+.first {
+    background-color: #F5C6D6;
+    width: 100%;
+    display: block;
+}
+.second {
+    background-color: #EE2E84;
+    width: 25%;
+    display: inline-block
+}
+.sixth {
+    background-color: #85CFD8;
+    width: 50%;
+    display: inline-block;
+}
+.seventh {
+    background-color: #85CFD8;
+    width: 50%;
+    display: inline-block;
+}
+.eigth {
+    background-color: #8DC63F;
+    width: 75%;
+    display: inline-block;
+}
+.ninth {
+    background-color: #E76E34;
+    width: 25%;
+    display: inline-block;
+}
