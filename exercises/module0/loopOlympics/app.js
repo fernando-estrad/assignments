@@ -24,7 +24,7 @@ for (i=0; i<101; i += 2){
 
 var fruitArr = ["banana","orange", "apple", "kiwi", "pear", "peach"]
 var NewfruitArr = []
-for (i=0; i<fruitArr.length; i+=2){
+for (i = 0; i < fruitArr.length; i += 2 ){
     NewfruitArr.push(fruitArr[i])
 }
 //console.log(NewfruitArr)
