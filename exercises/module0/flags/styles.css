@@ -7,6 +7,8 @@
     height: 125px;
     width: 60px;
     background-color: blue;
+    position: fixed;
+    bottom: 100px;
     display: inline-block;
 }
 .france2 {

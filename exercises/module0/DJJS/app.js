@@ -19,19 +19,21 @@ function turnOrange(){
     square.style.backgroundColor = "orange"
     console.log("scrolling")
 }
+function turnColor(color){
+    square.style.backgroundColor = color
+}
 
-square.addEventListener("mouseover", turnBlue)
+square.addEventListener("mouseover", function(){turnColor('blue')})
 square.addEventListener("mouseout", turnWhite)
 square.addEventListener("mousedown", turnRed)
 square.addEventListener("mouseup", turnYellow)
 square.addEventListener("dblclick", turnGreen)
 window.addEventListener("scroll", turnOrange)
 
-window.addEventListener('keydown', function(event){
-    console.log(event.which)
+window.addEventListener('keydown', 
+    function(event){
     if (event.keyCode === 82){
         turnRed()
-
     } else if (event.keyCode === 71){
         turnGreen()
     } else if (event.keyCode === 79){
