@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
      background-color: #fceed1; 
@@ -46,4 +47,47 @@ nav {
 .navContact:hover {
     font-size: 30px;
     color: darkgoldenrod;
+}
+.firstHomeDiv {
+    margin: 0px;
+    display: flex;
+    background-color: white;
+    height: 330px;
+}
+.randomDude {
+    width: 300px;
+    height: 250px;
+    margin: 30px 20px;
+    float: left;
+    position: relative;
+    top: 12px;
+}
+.coDescription {
+    margin: 10px;
+    position: relative;
+    top: 27px;
+    height: 250px;
+}
+.pacakesDiv {
+    margin: 0px;
+    height: 330px;   
+}
+.reviewsDiv {
+    margin: 0px;
+    height: 330px;
+    background-color: white;
+}
+@media only screen and (max-width: 600px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        float: left;
+        height: 100vh;
+        padding: 0px 15px;
+    }
+    .randomDude{
+        width: 150px;
+        height: 150px;
+    }
 }
