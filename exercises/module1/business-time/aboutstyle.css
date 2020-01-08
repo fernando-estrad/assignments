@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+     background-color: #fceed1; 
+}
+.titleContainer{
+    background-color: #0EC6B6;
+    padding: 10px 15px;
+}
+.title {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 70px;
+}
+nav {
+    background-color: #C2DFDD;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+}
+.navHome {
+    text-decoration: none;
+    font-size: 23px;
+    color: cornflowerblue;
+}
+.navHome:hover{
+    font-size: 30px;
+    color: darkgoldenrod;
+}
+.navAbout {
+    text-decoration: none;
+    font-size: 23px;
+    color: cornflowerblue;
+}
+.navAbout:hover {
+    font-size: 30px;
+    color: darkgoldenrod;
+}
+.navContact {
+    text-decoration: none;
+    font-size: 23px;
+    color: cornflowerblue;
+}
+.navContact:hover {
+    font-size: 30px;
+    color: darkgoldenrod;
+}

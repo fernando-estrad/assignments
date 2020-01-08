@@ -30,8 +30,7 @@ square.addEventListener("mouseup", turnYellow)
 square.addEventListener("dblclick", turnGreen)
 window.addEventListener("scroll", turnOrange)
 
-window.addEventListener('keydown', 
-    function(event){
+window.addEventListener('keydown', function(event){
     if (event.keyCode === 82){
         turnRed()
     } else if (event.keyCode === 71){
