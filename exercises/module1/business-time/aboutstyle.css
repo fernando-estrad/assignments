@@ -47,3 +47,14 @@ nav {
     font-size: 30px;
     color: darkgoldenrod;
 }
+@media only screen and (max-width: 600px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        float: left;
+        height: 100vh;
+        padding: 0px 15px;
+    }
+}

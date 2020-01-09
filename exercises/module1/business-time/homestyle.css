@@ -81,6 +81,7 @@ nav {
     nav {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         position: relative;
         float: left;
         height: 100vh;
