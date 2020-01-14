@@ -14,11 +14,12 @@ function createDropDown(){
         dropDown.append(option)
     }
     dropDown.addEventListener("change", function(e){
-        console.log(e.target.value)
+        //console.log(e.target.value)
         this.parentNode.style.backgroundColor = e.target.value
     })
     return dropDown
 }
+
 
 function createSubItem(e){
     const subItem = document.createElement("div")
