@@ -18,7 +18,7 @@ while (isAlive === true){
     while (lookingForEnemy === true){
     const walking = readline.keyIn("Press 'w' to walk: ",{limit: ['w', 'p']})
         if (walking === 'p'){
-            console.log(playerName + ", You have " + playerHp + " HP left. \nYour items: " + inventory)
+            console.log(playerName + ",You have " + playerHp + " HP left. \nYour items: " + inventory)
         } else if (walking === 'w'){
         console.log("Walking...")
         let enemyAppear = (Math.floor(Math.random() * 100))
@@ -66,7 +66,7 @@ while (isAlive === true){
             enemiesKilled += 1
             console.log("You have slain " + enemiesKilled + " enemies!")
                 if (enemiesKilled >= 10){
-                    console.log("Congratulations, " + playerName + " you are the greatest warrior this world has ever seen!")
+                    console.log("Congratulations, " + playerName + ", you are the greatest warrior this world has ever seen!")
                     isAlive = false
                     fighting = false
                 }
