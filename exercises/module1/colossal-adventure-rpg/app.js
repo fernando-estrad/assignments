@@ -1,5 +1,5 @@
 var readline = require('readline-sync')
-const playerName = readline.question("Welcome to my RPG game. \nYou may type 'p' at any time to show your inventory and HP. \nKill 10 enemies without dying to win! \nWhat is your name?: ")
+const playerName = readline.question("Welcome to my RPG game. \nYou may type 'p' at any time to show your inventory and HP. \nKill 10 enemies without dying to win! \n\nWhat is your name?: ")
 let lookingForEnemy = true
 const enemies = ["Goblin", "Orc", "Centaur", "Witch", "Giant Crab"]
 let playerHp = 12
@@ -18,7 +18,7 @@ while (isAlive === true){
     while (lookingForEnemy === true){
     const walking = readline.keyIn("Press 'w' to walk: ",{limit: ['w', 'p']})
         if (walking === 'p'){
-            console.log(playerName + ",You have " + playerHp + " HP left. \nYour items: " + inventory)
+            console.log("\n" + playerName + ", you have " + playerHp + " HP left. \nYour items: " + inventory)
         } else if (walking === 'w'){
         console.log("Walking...")
         let enemyAppear = (Math.floor(Math.random() * 100))
@@ -53,18 +53,22 @@ while (isAlive === true){
     while (fighting === true){
         console.log("\n" + playerName + " attacks!")
         readline.keyIn("Press 'a' to attack: ", {limit: 'a'})
-        playerDamageDealt = Math.floor((Math.random() * 7) + 1)
+        playerDamageDealt = Math.floor((Math.random() * 6) + 1)
         console.log("\nYou struck the " + typeOfEnemy + " and dealt " + playerDamageDealt + " damage!")
         enemyHealth -= playerDamageDealt
         console.log("The " + typeOfEnemy + " has " + enemyHealth + " health left!")
         readline.keyInPause()
         if (enemyHealth <= 0){
-            console.log("You have killed the " + typeOfEnemy + "!")
+            console.log("\nYou have killed the " + typeOfEnemy + "!")
             itemReceived = possibleItems[Math.floor(Math.random() * possibleItems.length)]
             console.log("\nYou have received" + itemReceived)
             inventory.push(itemReceived)
             enemiesKilled += 1
-            console.log("You have slain " + enemiesKilled + " enemies!")
+                if (enemiesKilled === 1){
+                    console.log("You have slain " + enemiesKilled + " enemy.")
+                } else if (enemiesKilled > 1 && enemiesKilled < 10){
+                console.log("You have slain " + enemiesKilled + " enemies!")
+                }
                 if (enemiesKilled >= 10){
                     console.log("Congratulations, " + playerName + ", you are the greatest warrior this world has ever seen!")
                     isAlive = false
