@@ -1,15 +1,15 @@
-var readline = require('readline-sync')
+const readline = require('readline-sync')
 const playerName = readline.question("Welcome to my RPG game. \nYou may type 'p' at any time to show your inventory and HP. \nKill 10 enemies without dying to win! \n\nWhat is your name?: ")
 let lookingForEnemy = true
 const enemies = ["Goblin", "Orc", "Centaur", "Witch", "Giant Crab"]
-let playerHp = 12
-let fightOrFlight = ["Try to run away.", "Fight!"]
+let playerHp = 15
+const fightOrFlight = ["Try to run away.", "Fight!"]
 let enemyHealth
 let fighting
 let playerDamageDealt, typeOfEnemy, enemyDamageDealt;
 let isAlive = true 
-let possibleItems = [" Iron Sword", " Wooden Shield", " Steel Sword", " Bronze Helm", " Steel Helm", " Short Bow", " Long Bow", " Steel Armor", " Worthless Junk"]
-let inventory = []
+const possibleItems = [" Iron Sword", " Wooden Shield", " Steel Sword", " Bronze Helm", " Steel Helm", " Short Bow", " Long Bow", " Steel Armor", " Worthless Junk"]
+const inventory = []
 let itemReceived
 let enemiesKilled = 0
 
@@ -53,7 +53,7 @@ while (isAlive === true){
     while (fighting === true){
         console.log("\n" + playerName + " attacks!")
         readline.keyIn("Press 'a' to attack: ", {limit: 'a'})
-        playerDamageDealt = Math.floor((Math.random() * 6) + 1)
+        playerDamageDealt = Math.floor((Math.random() * 8) + 1)
         console.log("\nYou struck the " + typeOfEnemy + " and dealt " + playerDamageDealt + " damage!")
         enemyHealth -= playerDamageDealt
         console.log("The " + typeOfEnemy + " has " + enemyHealth + " health left!")
@@ -67,7 +67,7 @@ while (isAlive === true){
                 if (enemiesKilled === 1){
                     console.log("You have slain " + enemiesKilled + " enemy.")
                 } else if (enemiesKilled > 1 && enemiesKilled < 10){
-                console.log("You have slain " + enemiesKilled + " enemies!")
+                    console.log("You have slain " + enemiesKilled + " enemies!")
                 }
                 if (enemiesKilled >= 10){
                     console.log("Congratulations, " + playerName + ", you are the greatest warrior this world has ever seen!")
@@ -76,15 +76,15 @@ while (isAlive === true){
                 }
             fighting = false
         } else if (enemyHealth > 0){
-        enemyDamageDealt = Math.floor((Math.random() * 3) + 1)
-        console.log("\nThe " + typeOfEnemy + " attacks back and deals " + enemyDamageDealt + " damage!")
-        playerHp -= enemyDamageDealt
-        console.log("You have " + playerHp + " HP left.")
-        if (playerHp <= 0){
-            console.log("\n" + playerName + " has died... Game Over")
-            isAlive = false
-            fighting = false
-        }
+            enemyDamageDealt = Math.floor((Math.random() * 3) + 1)
+            console.log("\nThe " + typeOfEnemy + " attacks back and deals " + enemyDamageDealt + " damage!")
+            playerHp -= enemyDamageDealt
+            console.log("You have " + playerHp + " HP left.")
+            if (playerHp <= 0){
+                console.log("\n" + playerName + " has died... Game Over")
+                isAlive = false
+                fighting = false
+            }
         }
     }
 }

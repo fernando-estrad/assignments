@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple HTML Calculator</h1>
+    <div id="container">
+        <button type="button" id="clearBtn">Clear</button>
+        <div id="additionDiv">
+            <form name="additionForm">
+                <input type="text" name="addFirstNum"> +
+                <input type="text" name="addSecondNum">
+                <button type="submit" id="addButton">Add</button>
+            </form>
+            <div id="addResults">   
+
+            </div>
+        </div>
+        <div id="substractionDiv">
+            <form name="substractionForm">
+                <input type="text" name="subFirstNum"> -
+                <input type="text" name="subSecondNum">
+                <button type="submit" id="subButton">Substract</button>
+            </form>
+            <div id="subResults">
+
+            </div>
+        </div>
+        <div id="multDiv">
+            <form name="multForm">
+                <input type="text" name="multFirstNum"> *
+                <input type="text" name="multSecondNum">
+                <button type="submit" id="multButton">Multiply</button>
+            </form>
+            <div id="multResults">
+
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

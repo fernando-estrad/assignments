@@ -1,0 +1,21 @@
+#addButton {
+    background-color: aqua;
+}
+#subButton {
+    background-color: blanchedalmond;
+}
+#multButton {
+    background-color: cornflowerblue;
+}
+#addResults, #subResults, #multResults {
+    padding: 8px;
+    height: 15px;
+    width: min-content;
+    border: 2px solid black;
+    margin: 6px;
+}
+#clearBtn {
+    height: 30px;
+    width: 50px;
+    margin-bottom: 10px;
+}

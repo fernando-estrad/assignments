@@ -10,8 +10,10 @@ function addNew(){
     var newDelButton = document.getElementsByClassName("xButton")
     for (var i = 0; i < newDelButton.length; i++){
         newDelButton[i].addEventListener("click", eraseItem)
-    }  
+    }
+    input.value = ""  
 }
+
 submitButton.addEventListener("click", addNew)
 
 function eraseItem(e){
