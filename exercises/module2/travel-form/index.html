@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fernando Airlines</h1>
+    Please fill out the form below so we can better assist you.
+    <form name="travelForm">
+        <input type="text" name="firstName" placeholder="First Name" required>
+        <input type="text" name="lastName" placeholder="Last Name" required>
+        <br>
+        <input type="number" name="age" placeholder="Age" required>
+        <br>
+        Male:   <input type="radio" name="gender" value="Male">
+        Female: <input type="radio" name="gender" value="Female">
+        <br>
+        Where will you be flying?
+        <select name="destination">
+            <option value="Paris">Paris</option>
+            <option value="San Diego">San Diego</option>
+            <option value="Egypt">Egypt</option>
+        </select>
+        <br>
+        Any dietary restrictions?:
+        <br>
+        <input type="checkbox" name="diet" value="Vegetarian"> Vegetarian <br>
+        <input type="checkbox" name="diet" value="Vegan"> Vegan <br>
+        <input type="checkbox" name="diet" value="Lactose Intolerant"> Lactose Intolerant <br>
+        <button type="submit">Submit!</button>
+    </form> 
+</body>
+<script src="app.js"></script>
+</html>

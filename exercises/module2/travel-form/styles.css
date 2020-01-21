@@ -1,0 +1,15 @@
+* {
+    margin: 4px;
+}
+h1 {
+    font-size: 70px;
+    margin-bottom: 17px;
+    color: cornflowerblue;
+}
+button {
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: darkgrey;
+    color: red;
+}
