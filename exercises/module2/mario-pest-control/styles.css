@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    height: 200px;
+    width: 200px;
+    border: 7px double #b5651d;
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 15px;
+}
+body {
+    background-image: url("Images/514044.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, minmax(50px, min-content));
+}
+#titleContainer{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+#titleImg{
+    height: auto;
+    width: auto;
+    border: none;
+    background: none;
+}
+#subtitle{
+    font-size: 36px;
+    margin-bottom: 20px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-family: 'Bangers';
+}
+#goombaContainer{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bobOmpContainer{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cheepCheepContainer {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+figcaption {
+    text-align: center;
+    font-family: 'Bangers';
+    font-size: 20px;
+    margin: 8px;
+    text-shadow: 1px 1px crimson;
+}
+form {
+    grid-row: 4 /5;
+    grid-column: 2 / 3;
+}
+input {
+    width: 150px;
+    height: 20px;
+    border: 4px solid crimson;
+    margin: 2px;
+}
+#goombaInputContainer {
+    grid-column: 1 / 2;
+    grid-row: 4/ 5;
+    display: flex;
+    justify-content: center;
+}
+#bobOmpInputContainer{
+    grid-column: 2 / 3;
+    grid-row: 4/ 5;
+    display: flex;
+    justify-content: center;
+}
+
+#cheepCheepInputContainer{
+    grid-column: 3 / 4;
+    grid-row: 4/ 5;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 35px;
+    position: relative;
+    top: 7px;
+    left: 280px;
+    width: 165px;
+    border-radius: 12px;
+}
+
+#totalPriceContainer {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    border: 4px dashed crimson;
+    border-radius: 20px;
+    width: 160px;
+    height: 43px;
+    background-color: gray;
+    position: relative;
+    left: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bangers', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
