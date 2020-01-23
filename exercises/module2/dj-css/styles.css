@@ -6,10 +6,6 @@
     background-color: bisque;
     transition: all 500ms;
 }
-#content {
-    
-}
-
 #box1:hover {
     background-color: red;
     border-color: blue;
@@ -24,10 +20,26 @@
 
 #box3:hover{
     border-style: groove;
-    height: 50px;
-    width: 50px;
+    height: 90px;
+    width: 90px;
 }
 
-#box4:hover{
+#box4:hover {
+    /* opacity: 0%; */
+    box-shadow: indigo 10px 10px, yellow 20px 20px, red 30px 30px;
+    border: none;
+    position: relative;
+    left: 10px;
+}
 
+#box5:hover{
+    border-radius: 50%;
+    background-color: yellowgreen;
+    box-shadow: red -10px -10px;
+}
+
+#box6:hover{
+    opacity: 70%;
+    height: 100vh;
+    width: 2in;
 }
