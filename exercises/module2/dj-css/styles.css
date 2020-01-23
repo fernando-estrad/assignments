@@ -1,0 +1,33 @@
+#content > div {
+    height: 100px;
+    width: 100px;
+    border: 4px solid black;
+    margin: auto;
+    background-color: bisque;
+    transition: all 500ms;
+}
+#content {
+    
+}
+
+#box1:hover {
+    background-color: red;
+    border-color: blue;
+    width: 200px;
+}
+
+#box2:hover{
+    border: 4px dashed green;
+    height: 200px;
+    opacity: 20%;
+}
+
+#box3:hover{
+    border-style: groove;
+    height: 50px;
+    width: 50px;
+}
+
+#box4:hover{
+
+}
