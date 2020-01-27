@@ -16,11 +16,13 @@
     background-color: blue;
     grid-row: 1/2;
     grid-column: 1/-1;
+    opacity: 65%;
 }
 .nav {
     background-color: chocolate;
     grid-column: 1/-1;
     grid-row: 2/3;
+    opacity: 65%;
 }
 .authors {
     background-color: lightcoral
