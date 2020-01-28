@@ -58,15 +58,23 @@
 
 // console.log(product(2, 2, 55))
 
-function populatePeople(names){
-    return names.map((name) => {
-        name = name.split(" ");
-        let firstName = name[0]
-        let lastName = name[1]
-        return {
-            firstName: firstName,
-            lastName: lastName
-        }
-})
+// function populatePeople(names){
+//     return names.map((name) => {
+//         name = name.split(" ");
+//         let firstName = name[0]
+//         let lastName = name[1]
+//         return {
+//             firstName: firstName,
+//             lastName: lastName
+//         }
+// })
+// }
+// console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))
+
+function Car(make, model){
+    this.make = make
+    this.model = model
 }
-console.log(populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"]))
+
+const mine = new Car('Ford', 'Fusion')
+console.log(mine)
