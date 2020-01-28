@@ -1,0 +1,52 @@
+{
+    "appetizers": [{
+        "name": "Calamari",
+        "ingredients": ["Calamari", "Sauce"],
+        "description": "Delicious, fresh calamari."
+    },
+    {
+        "name": "Ceviche",
+        "ingredients": ["Shrimp", "Tomato", "Avocado", "Onion"],
+        "description": "Peruvian style ceviche."
+    }],
+    
+    "cold sandwiches:": [{
+        "name": "Ham & Cheese",
+        "ingredients": ["Ham", "Cheese"],
+        "description": "Cold ham and cheese."
+    },{
+        "name": "BLT",
+        "ingredients": ["Bacon", "Lettuce", "Tomato", "Mayonnaise"],
+        "description": "Best BLT in town."
+    }],
+
+    "hot sandwiches": [{
+        "name": "Reuben Ham & Cheese",
+        "ingredients": ["Corned Beef", "Swiss Cheese", "Sauerkraut"],
+        "description": "Random description"
+    },{
+        "name": "Another Hot Sandwich",
+        "ingredients": ["Same", "Old", "Stuff", "As", "Always"],
+        "description": "Here is yet another hot sandwich."
+    }],
+
+    "desserts": [{
+        "name": "Chocolate Cake",
+        "ingredients": ["Chocolate", "Other stuff", "Some other stuff."],
+        "description": "A cake that is made out of chocolate!"
+    },{
+        "name": "Ice Cream",
+        "ingredients": ["I dont", "even know", "how to make", "this"],
+        "description": "Just regular ol' ice cream."
+    }],
+
+    "drinks": [{
+        "name": "Coca Cola",
+        "ingredients": ["a ton", "of things", "you are probably", "not supposed to consume."],
+        "description": "Will also clean your engine."
+    },{
+        "name": "Orange Juice",
+        "ingredients": ["Oranges", "Sugar", "Water"],
+        "description": "Not very healthy but better than Coke!"
+    }]
+}
