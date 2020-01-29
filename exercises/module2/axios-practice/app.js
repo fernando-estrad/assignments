@@ -1,0 +1,5 @@
+const axios = require("axios")
+axios.get("https://api.vschool.io/fernandoestrada1/todo")
+    .then(response => console.log(response.data))
+    .catch(err => console.log(err))
+console.log(axios)
