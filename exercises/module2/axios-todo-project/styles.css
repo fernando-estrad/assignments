@@ -1,0 +1,17 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    background: url("https://images.unsplash.com/photo-1580123071152-670e4148f49b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") no-repeat center center fixed;
+    background-size: cover;
+}
+header {
+    text-align: center;
+    padding: 30px 0px;
+    text-shadow: #8786c2 2px 2px;
+    font-family: "Shadows Into Light", Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    font-weight: 300;
+}
