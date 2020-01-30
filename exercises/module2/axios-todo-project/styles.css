@@ -4,14 +4,65 @@
     box-sizing: border-box;
 }
 html{
-    background: url("https://images.unsplash.com/photo-1580123071152-670e4148f49b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") no-repeat center center fixed;
+    background: url("https://images.unsplash.com/photo-1576080971617-5b789d9bcee4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2549&q=80") no-repeat center center fixed;
     background-size: cover;
 }
 header {
     text-align: center;
-    padding: 30px 0px;
+    padding: 13px 0px;
     text-shadow: #8786c2 2px 2px;
     font-family: "Shadows Into Light", Arial, Helvetica, sans-serif;
     font-size: 55px;
     font-weight: 300;
+}
+hr{
+    width: 75%;
+    margin: auto;
+    border: 1px solid #454461;
+    grid-column: 1/2;
+}
+#container {
+    min-height: 470px;
+    max-height: fit-content;
+    max-width: 1050px;
+    background-color: #497563;
+    opacity: .8;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 8px outset rgba(164,123,134,0.59);
+    border-radius: 25px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#mainFormTitle {
+    font-family: "Permanent Marker";
+    grid-column: 1 / 2;
+}
+#formHr{
+    margin-bottom: 5px;
+    grid-column: 1 / 2;
+}
+#todoList {
+    list-style-type: none;
+}
+#formTitleContainer{
+    text-align: center;
+}
+input {
+    width: 60%;
+    height: 30px;
+    font-size: large;
+    font-family: "Mali", Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+#inputContainer {
+    grid-column: 1/2;
+    border-right: 8px solid black;
+}
+#list {
+    grid-column: 2/-1;
+}
+label {
+    margin-left: 10px;
 }

@@ -6,6 +6,6 @@ const newTodo = {
     imgUrl: "randomwebsite.com/img.jpg"
 }
 
-axios.get("https://api.vschool.io/fernandoestrada/todo")
+axios.post("https://api.vschool.io/fernandoestrada/todo", newTodo)
     .then(response => console.log(response.data))
     .catch(error => console.log(error))
