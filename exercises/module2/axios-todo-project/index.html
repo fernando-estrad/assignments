@@ -20,17 +20,23 @@
                 <hr id="formHr">
             </div>
             <form name="newTodo">
-            <label>Title</label>
+            <label>Title:</label>
             <br>
-            <input type="text" name="title"><br>
-            <label>Description</label>
+            <input type="text" name="title" required>
+            <br>
+            <label>Description:</label>
             <br>
             <input type="textarea" name="description">
+            <br>
+            <label>Image URL:</label>
+            <br>
+            <input type="url" name="imgUrl">
+            <br>
+            <button class="addTodoBtn" name="addTodoBtn" type="submit">Add To-do!</button>
             </form>
         </div>
         <div id="list">
             <ul id="todoList">
-            
             </ul>
         </div>
     </div>

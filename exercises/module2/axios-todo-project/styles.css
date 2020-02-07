@@ -15,18 +15,12 @@ header {
     font-size: 55px;
     font-weight: 300;
 }
-hr{
-    width: 75%;
-    margin: auto;
-    border: 1px solid #454461;
-    grid-column: 1/2;
-}
 #container {
     min-height: 470px;
     max-height: fit-content;
     max-width: 1050px;
-    background-color: #497563;
-    opacity: .8;
+    background-image: linear-gradient(to right, #497563, grey);
+    opacity: .9;
     margin: auto;
     margin-bottom: 20px;
     border: 8px outset rgba(164,123,134,0.59);
@@ -34,16 +28,24 @@ hr{
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    word-wrap: break-word;
 }
 #mainFormTitle {
     font-family: "Permanent Marker";
+    font-size: 35px;
     grid-column: 1 / 2;
 }
 #formHr{
     margin-bottom: 5px;
     grid-column: 1 / 2;
+    width: 75%;
+    margin: auto;
+    border: 2px solid #454461;
 }
 #todoList {
+    list-style-type: none;
+}
+ul {
     list-style-type: none;
 }
 #formTitleContainer{
@@ -55,14 +57,74 @@ input {
     font-size: large;
     font-family: "Mali", Arial, Helvetica, sans-serif;
     margin-left: 10px;
+    margin-bottom: 5px;
 }
 #inputContainer {
     grid-column: 1/2;
-    border-right: 8px solid black;
+    border-right: 5px solid #454461;
 }
+
 #list {
     grid-column: 2/-1;
+    margin: 15px;
+    font-family: "Mali", Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
+
 label {
     margin-left: 10px;
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
 }
+
+.addTodoBtn {
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.newTodoTitle {
+    font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.newTodoImg{
+    max-height: 45px;
+    max-width: 45px;
+    float: left;
+    border: 2px solid black;
+    margin-right: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+    
+}
+
+.delBtn{
+    background: none;
+    border: none;
+    background-color: #d18273;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 10px;
+    color: #b85440;
+}
+
+.listHr{
+    margin-bottom: 5px;
+}
+
+.checkbox{
+    height: auto;
+    width: auto;
+    float: right;
+    margin-left: 5px;
+}
+
+.checkboxLabel{
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+}
+
