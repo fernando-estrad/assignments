@@ -15,10 +15,6 @@ function getList(){
 function listData(data){
     data.forEach(data => {
         createTodo(data)
-        // const delBtn = document.getElementsByClassName("delBtn")
-        // for (let i = 0; i < delBtn.length; i++){
-        //     delBtn[i].addEventListener("click", eraseItem)
-        // }
     })
 }
 

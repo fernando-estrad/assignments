@@ -52,7 +52,6 @@ const playerOne = new Player("Luigi")
 
 const intervalId = setInterval(function actions(min = 0, max = 3){
     const number = Math.floor(Math.random() * (max - min) + min)
-    console.log(number)
     if (number === 0){
         playerOne.gotHit()
     } else if (number === 1){
