@@ -66,6 +66,3 @@ const intervalId = setInterval(function actions(min = 0, max = 3){
     
 }, 1000)
 
-
-
-

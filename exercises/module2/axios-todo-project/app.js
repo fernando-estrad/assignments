@@ -46,7 +46,7 @@ function isComplete(){
 function createTodo(todo){
     const newLi = document.createElement("li")
     
-    if (todo.imgUrl == ""){
+    if (todo.imgUrl === ""){
         newLi.innerHTML = `<li><span class = newTodoTitle>${todo.title}</span><input class="checkbox" type="checkbox" name="isCompleted">
         <label class = "checkboxLabel">Completed</label><br><span class=newTodoDescription>${todo.description}</span><br><hr class="listHr"></li>`
     } else {
