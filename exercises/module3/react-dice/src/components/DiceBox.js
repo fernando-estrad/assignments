@@ -11,7 +11,14 @@ class DiceBox extends React.Component {
     }
     
     render(){
-        const dice = this.props.nums.map(num => <Die img={this.state.images} num={num}/>)
+        const dice = this.props.nums.map(num => 
+        <Die 
+            img={this.state.images} 
+            num={num} 
+            stopChanging={this.props.stopChanging}
+            isClicked={this.props.isClicked}
+        />)
+        
         return (
             <div className="dice-box">
                 {dice}
