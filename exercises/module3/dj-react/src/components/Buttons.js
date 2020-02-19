@@ -13,6 +13,7 @@ class Buttons extends React.Component{
                 <Button innerText="B/W" function={this.props.blackOrWhite} />
                 <Button innerText="Two Purple" function={this.props.twoPurple} />
                 <Button innerText="Third Blue" function={this.props.thirdBlue} />
+                <Button innerText="Fourth Blue" function={this.props.fourthBlue} />
             </div>
         )
     }
