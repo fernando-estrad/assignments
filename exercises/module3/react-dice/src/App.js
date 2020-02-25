@@ -7,11 +7,10 @@ class App extends React.Component {
   constructor(){
     super()
     this.state = {
-      nums: [0, 0, 0, 0, 0, 0],
-      isClicked: [false, false, false, false, false, false]
+      nums: [0, 0, 0, 0, 0, 0]
     }
     this.randomizer = this.randomizer.bind(this)
-    this.stopChanging = this.stopChanging.bind(this)
+    // this.stopChanging = this.stopChanging.bind(this)
   }
 
   randomizer(){
@@ -23,16 +22,6 @@ class App extends React.Component {
     let six = Math.floor(Math.random() * 6)
     
     this.setState({nums: [one, two, three, four, five, six]})
-  }
-
-  stopChanging(){
-    if (this.state.isClicked) {
-      this.setState({isClicked: false})
-    } else if (!this.state.isClicked) {
-      this.setState({isClicked: true})
-    }
-
-    console.log(this.state.isClicked)
   }
 
   render(){

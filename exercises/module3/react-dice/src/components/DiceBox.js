@@ -15,7 +15,7 @@ class DiceBox extends React.Component {
         <Die 
             img={this.state.images} 
             num={num} 
-            stopChanging={this.props.stopChanging}
+            // stopChanging={this.props.stopChanging}
             isClicked={this.props.isClicked}
         />)
         

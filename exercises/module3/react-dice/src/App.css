@@ -1,14 +1,15 @@
 .dice-box {
   background-color: gray;
   opacity: .9;
-  width: 70%;
+  width: 80%;
   height: 400px;
   margin: auto;
   border-radius: 15px;  
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px;
+  padding: auto;
+  flex-wrap: wrap;
 }
 
 .main {
@@ -18,7 +19,7 @@
 }
 
 button {
-  width: 25%;
+  width: max-content;
   align-self: center;
   margin-bottom: 80px;
   font-size: 30px;
@@ -42,9 +43,10 @@ button:focus{
 }
 
 img {
-  height: 75px;
-  width: 75px;
+  /* height: 60px;
+  width: 60px; */
   border-radius: 5px;
+  margin: 0 10px 0 10px;
 } 
 
 img:hover {
@@ -52,7 +54,3 @@ img:hover {
   width: 100px;
 }
 
-img:focus {
-  height: 100px;
-  width: 100px;
-}
