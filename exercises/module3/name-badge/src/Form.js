@@ -3,9 +3,9 @@ import React, {Component} from "react"
 export default class Form extends Component{
     render(){
         return (
-            <form className="form">
+            <form className="form" onSubmit={this.props.handleSubmit}>
                 <input 
-                    min="3" 
+                    minLength="3" 
                     type="first name" 
                     name="fName" 
                     placeholder="First Name" 
@@ -14,7 +14,7 @@ export default class Form extends Component{
                     onChange={this.props.handleChange} 
                 />
                 <input 
-                    min="3" 
+                    minLength="3" 
                     type="last name" 
                     name="lName" 
                     placeholder="Last Name" 
@@ -23,7 +23,7 @@ export default class Form extends Component{
                     onChange={this.props.handleChange}
                 />
                 <input 
-                    min="3" 
+                    minLength="3" 
                     type="email" 
                     name="email" 
                     placeholder="Email"
@@ -31,7 +31,7 @@ export default class Form extends Component{
                     onChange={this.props.handleChange} 
                 />
                 <input 
-                    min="3" 
+                    minLength="3" 
                     type="tel" 
                     name="phoneNumber" 
                     placeholder="Phone Number" 
@@ -39,7 +39,7 @@ export default class Form extends Component{
                     onChange={this.props.handleChange}
                 />
                 <input 
-                    min="3" 
+                    minLength="3" 
                     type="text" 
                     name="placeOfBirth" 
                     placeholder="Place of Birth" 
@@ -47,14 +47,30 @@ export default class Form extends Component{
                     onChange={this.props.handleChange}
                 />
                 <input 
-                    min="3" 
+                    minLength="3" 
                     type="text" 
                     name="favoriteFood" 
                     placeholder="Favorite Food" 
                     value={this.props.state.favoriteFood}
                     onChange={this.props.handleChange}
                 />
-                <button>Create New Badge</button>
+                <textarea 
+                    name="about"
+                    placeholder="Tell us about yourself."
+                    value={this.props.state.about}
+                    onChange={this.props.handleChange}
+                />
+                <button 
+                    disabled={
+                        this.props.state.fName === "" || 
+                        this.props.state.lName === "" || 
+                        this.props.state.email === "" ||
+                        this.props.state.phoneNumber === "" ||
+                        this.props.state.placeOfBirth === "" || 
+                        this.props.state.favoriteFood === "" || 
+                        this.props.state.about === ""
+                    }> Create New Badge 
+                </button>
             </form>
         )
     }

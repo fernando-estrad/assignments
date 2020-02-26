@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import Form from "./Form"
+import Badge from "./Badge"
 import "./styles.css"
 
 export default class App extends Component {
@@ -11,7 +12,9 @@ export default class App extends Component {
             email: "",
             phoneNumber: "",
             placeOfBirth: "",
-            favoriteFood: ""
+            favoriteFood: "",
+            about: "",
+            badges: []
         }
     }
 
@@ -23,10 +26,40 @@ export default class App extends Component {
         console.log(this.state)
     }
 
+    handleSubmit = e => {
+        e.preventDefault()
+        
+        this.setState(prevState => {
+            return {
+                fName: "",
+                lName: "",
+                email: "",
+                phoneNumber: "",
+                placeOfBirth: "",
+                favoriteFood: "",
+                about: "",
+                badges:  [...prevState.badges, {
+                    fName: this.state.fName,
+                    lName: this.state.lName,
+                    email: this.state.email,
+                    phoneNumber: this.state.phoneNumber,
+                    placeOfBirth: this.state.placeOfBirth,
+                    favoriteFood: this.state.favoriteFood,
+                    about: this.state.about
+                }]
+               
+            }
+        })
+    }
+
     render(){
+        const badgeComponent = this.state.badges.map(badge => <Badge badge={badge} />)
         return(
             <div className="main">
-                <Form state={this.state} handleChange={this.handleChange}/>
+                <Form state={this.state} handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
+                <div className="badges-container">
+                    {badgeComponent}
+                </div>
             </div>
         )
     }
