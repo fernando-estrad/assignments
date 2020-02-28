@@ -9,7 +9,7 @@ export default class Cards extends React.Component {
             loading: false,
             targets: []
         }
-        this.handleClick = this.handleClick.bind(this)
+        // this.handleClick = this.handleClick.bind(this)
     }
 
     componentDidMount(){
@@ -24,9 +24,9 @@ export default class Cards extends React.Component {
             })})
     }
 
-    handleClick(){
-        console.log("clicked")
-    }
+    // handleClick(){
+    //     console.log("clicked")
+    // }
 
     render(){
         console.log(this.state.targets)

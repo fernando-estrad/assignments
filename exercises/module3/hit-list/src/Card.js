@@ -1,10 +1,46 @@
 import React from "react"
+import UIfx from 'uifx'
+import gunshot from './my-sounds/gunshot.mp3'
 
-export default function Card(props) {
-    return(
-        <div className="card" onClick={props.handleClick}>
-            <img src={props.target.image} alt={props.target.name}></img>
-            <h3>{props.target.name}</h3>
-        </div>
-    )
+const gunShot = new UIfx (
+    gunshot,
+    {
+        volume: .04,
+        throttleMs: 100
+    }
+)
+
+export default class Card extends React.Component {
+    constructor(){
+        super()
+        this.state = {
+            isAlive: true
+        }
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick(){
+        this.setState({
+            isAlive: !this.state.isAlive
+        })
+
+        if (this.state.isAlive){
+            gunShot.play()
+        } 
+    }
+    
+    render(){
+        const imgUrl = this.state.isAlive ? this.props.target.image : "https://i.ytimg.com/vi/gPxJAx7ysVA/maxresdefault.jpg"
+
+        return(
+            <div 
+                className={this.state.isAlive ? "card" : "dead-card"} 
+                onClick={this.handleClick}
+                // style={style}
+            >
+                <img src={imgUrl} alt={this.props.target.name}></img>
+                <h3>{this.props.target.name}</h3>
+            </div>
+        )
+    }
 }
