@@ -23,12 +23,9 @@ export default class Cards extends React.Component {
             })})
     }
 
-    // handleClick(){
-    //     console.log("clicked")
-    // }
 
     render(){
-        const card = this.state.targets.map(target => <Card target={target} handleClick={this.handleClick}/>)
+        const card = this.state.targets.map(target => <Card target={target} />)
 
         return(
             <div className="cards">

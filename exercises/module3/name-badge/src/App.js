@@ -14,7 +14,7 @@ export default class App extends Component {
             placeOfBirth: "",
             favoriteFood: "",
             about: "",
-            badges: []
+            badges: []x
         }
     }
 
@@ -30,6 +30,7 @@ export default class App extends Component {
         e.preventDefault()
         
         this.setState(prevState => {
+            let {fName, lName, email, phoneNumber,placeOfBirth, favoriteFood, about} = prevState
             return {
                 fName: "",
                 lName: "",
@@ -39,13 +40,13 @@ export default class App extends Component {
                 favoriteFood: "",
                 about: "",
                 badges:  [...prevState.badges, {
-                    fName: this.state.fName,
-                    lName: this.state.lName,
-                    email: this.state.email,
-                    phoneNumber: this.state.phoneNumber,
-                    placeOfBirth: this.state.placeOfBirth,
-                    favoriteFood: this.state.favoriteFood,
-                    about: this.state.about
+                    fName,
+                    lName,
+                    email,
+                    phoneNumber,
+                    placeOfBirth,
+                    favoriteFood,
+                    about
                 }]
                
             }
