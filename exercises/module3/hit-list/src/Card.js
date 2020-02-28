@@ -6,7 +6,7 @@ const gunShot = new UIfx (
     gunshot,
     {
         volume: .04,
-        throttleMs: 100
+        throttleMs: 50
     }
 )
 

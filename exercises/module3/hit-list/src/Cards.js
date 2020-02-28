@@ -9,14 +9,13 @@ export default class Cards extends React.Component {
             loading: false,
             targets: []
         }
-        // this.handleClick = this.handleClick.bind(this)
+        
     }
 
     componentDidMount(){
         this.setState({
             loading: true
         })
-        console.log("didMount")
         axios.get("https://raw.githubusercontent.com/VSchool/vschool-api/master/static/hitlist.json")
             .then(response => {this.setState({
                 loading: false,
@@ -29,7 +28,6 @@ export default class Cards extends React.Component {
     // }
 
     render(){
-        console.log(this.state.targets)
         const card = this.state.targets.map(target => <Card target={target} handleClick={this.handleClick}/>)
 
         return(

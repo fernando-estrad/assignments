@@ -29,7 +29,7 @@ header > h1 {
 
 .cards {
     display: flex;
-    width: 70%;
+    width: 60%;
     flex-wrap: wrap;
     margin: 5rem auto 0;
     justify-content: space-evenly;
@@ -75,4 +75,25 @@ header > h1 {
     font-size: 20px;
     text-align: center;
     font-family: 'Satisfy';
+}
+
+.rcc-container {
+    margin: auto;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    /* background-color: #072302; */
+    margin: 30px auto 10px;
+}
+
+.rcc-container > button {
+    width: 100px;
+    margin-bottom: 20px;
 }
