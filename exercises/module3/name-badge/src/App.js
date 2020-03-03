@@ -14,7 +14,7 @@ export default class App extends Component {
             placeOfBirth: "",
             favoriteFood: "",
             about: "",
-            badges: []x
+            badges: []
         }
     }
 
