@@ -36,14 +36,15 @@ header > h1 {
 }
 
 .card {
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 1rem;
     background-color: rgba(90, 90, 90, .5);
     padding-bottom: 5px;
     border-radius: 10px;
+    
 }
 
 .dead-card {
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 1rem;
     padding-bottom: 5px;
     border-radius: 10px;
     background-color: black;

@@ -16,11 +16,8 @@ export default class Cards extends React.Component {
         this.setState({
             loading: true
         })
-        axios.get("https://raw.githubusercontent.com/VSchool/vschool-api/master/static/hitlist.json")
-            .then(response => {this.setState({
-                loading: false,
-                targets: response.data
-            })})
+
+        axios.get("https://raw.githubusercontent.com/VSchool/vschool-api/master/static/hitlist.json").then(response => {this.setState({loading: false, targets: response.data})})
     }
 
 

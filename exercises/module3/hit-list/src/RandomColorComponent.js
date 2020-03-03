@@ -15,6 +15,8 @@ export default class RandomColorComponent extends React.Component {
             .then(response => this.setState({
                 color: response.data.colors[0].hex
             }))
+        
+
     }
 
     handleClick(){
