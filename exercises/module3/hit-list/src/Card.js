@@ -36,7 +36,6 @@ export default class Card extends React.Component {
             <div 
                 className={this.state.isAlive ? "card" : "dead-card"} 
                 onClick={this.handleClick}
-                // style={style}
             >
                 <img src={imgUrl} alt={this.props.target.name}></img>
                 <h3>{this.props.target.name}</h3>

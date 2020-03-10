@@ -62,13 +62,13 @@ export default class Form extends Component{
                 />
                 <button 
                     disabled={
-                        this.props.state.fName === "" || 
-                        this.props.state.lName === "" || 
-                        this.props.state.email === "" ||
-                        this.props.state.phoneNumber === "" ||
-                        this.props.state.placeOfBirth === "" || 
-                        this.props.state.favoriteFood === "" || 
-                        this.props.state.about === ""
+                        !this.props.state.fName || 
+                        !this.props.state.lName || 
+                        !this.props.state.email ||
+                        !this.props.state.phoneNumber ||
+                        !this.props.state.placeOfBirth || 
+                        !this.props.state.favoriteFood  || 
+                        !this.props.state.about 
                     }> Create New Badge 
                 </button>
             </form>
