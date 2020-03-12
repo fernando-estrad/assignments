@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import  {ContextConsumer} from './Context'
 
 export default class Form extends Component {
     state = {
@@ -13,20 +14,24 @@ export default class Form extends Component {
         this.setState({[name]: value})
     }
 
-    handleSubmit = (event) => {
-        event.preventDefault()
+    handleSubmit = (e, addUglyThing) => {
+        e.preventDefault()
 
-        console.log("pressed")
+        addUglyThing(this.state)
     }
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
-                <input placeholder="Image URL" name="imgUrl" value={this.state.imgUrl} onChange={this.handleChange}></input>
-                <input placeholder="Title" name="title" value={this.state.title} onChange={this.handleChange}></input>
-                <input placeholder="Description" name="description" value={this.state.description} onChange={this.handleChange}></input>
-                <button>Submit</button>
-            </form>
+            <ContextConsumer>
+                {context => (
+                    <form onSubmit={(e) => this.handleSubmit(e, context.addUglyThing)}>
+                        <input placeholder="Image URL" name="imgUrl" value={this.state.newImgUrl} onChange={this.handleChange}></input>
+                        <input placeholder="Title" name="title" value={this.state.newTitle} onChange={this.handleChange}></input>
+                        <input placeholder="Description" name="description" value={this.state.newDescription} onChange={this.handleChange}></input>
+                        <button>Submit</button>
+                    </form>
+                )}
+            </ContextConsumer>
         )
     }
 }
