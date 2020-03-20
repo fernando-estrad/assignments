@@ -3,13 +3,14 @@ html, body {
   color: #00b800;
   margin:0;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 5px;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
 }
 
 body {
   font-weight: 400;
+  display: grid;
 }
 
 button {
@@ -46,4 +47,27 @@ textarea {
 
 textarea:disabled {
   background-color: #a5a2a2;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.prompt {
+  /* background-color: #a5a2a2; */
+  font-size: 15px;
+  font-family: "Spartan";
+  line-height: 1.5rem;
+  width: 75%;
+  margin: 0 auto;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  -webkit-user-select: none;
+}
+
+.prompt > h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: #00b800;
 }
