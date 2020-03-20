@@ -55,13 +55,12 @@ textarea:disabled {
 }
 
 .prompt {
-  /* background-color: #a5a2a2; */
   font-size: 15px;
   font-family: "Spartan";
   line-height: 1.5rem;
   width: 75%;
   margin: 0 auto;
-  color: white;
+  color: whitesmoke;
   text-align: left;
   padding: 10px;
   -webkit-user-select: none;

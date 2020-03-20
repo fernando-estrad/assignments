@@ -1,8 +1,8 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef, useContext} from 'react';
 import './App.css';
 
 function Game(props) {
-  const STARTING_TIME = 10000
+  const STARTING_TIME = 60
 
   const [timer, setTimer] = useState(STARTING_TIME)
   const [isGameOn, setGameOn] = useState(false)
@@ -24,7 +24,8 @@ function Game(props) {
       setTimeout(() => setTimer(prevTimer => prevTimer - 1), 1000)
     } else if (timer === 0){
       setGameOn(false)
-      setwordCount(props.text.trim().split(" ").filter(word => word !== "").length)
+      setwordCount(props.text.trim().match(/.{1,5}/g).length)
+      console.log(props.text.trim().match(/.{1,5}/g))
     }
   }, [timer, isGameOn])
 
