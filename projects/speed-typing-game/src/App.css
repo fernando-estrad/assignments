@@ -23,6 +23,10 @@ button {
   text-transform: uppercase;
 }
 
+button:disabled{
+  background-color: red;
+}
+
 h1 {
   font-size: 20px;
   text-align:center;
@@ -38,4 +42,8 @@ textarea {
   background: #00b800;
   padding: 10px;
   resize: none;
+}
+
+textarea:disabled {
+  background-color: #a5a2a2;
 }
