@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 0 25%;
+    background-color: rgba(245, 245, 245, .85);
+}
+
+nav > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    padding: 15px 10px;
+}
+
+nav > a:hover {
+    color: #c46155;
+}
+
+.home {
+    margin: auto;
+    padding-top: 7rem;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100vh;
+    background: linear-gradient(
+            rgba(0,0,0,0.15),
+            rgba(0,0,0,0.15)
+        ),
+        url("./bg-img.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.home > h1 {
+    font-size: 70px;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.home > p {
+    font-size: 40px;
+    font-weight: 100;
+}
