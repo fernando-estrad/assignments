@@ -13,7 +13,7 @@ export default function Home(){
             <div className="continue-to-page">
                 <a href="#techSkills"><i class="fas fa-arrow-circle-down"></i></a>
             </div>
-            <span id="techSkills"></span>
+            {/* <span id="techSkills"></span> */}
         </div>
     )
 }

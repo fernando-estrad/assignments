@@ -2,7 +2,7 @@ import React from "react"
 
 export default function SkillList(){
     return (
-        <div className="skill-list" id="skills">
+        <div className="skill-list">
             <div>
                 <i class="fab fa-html5" style={{fontSize: "150px"}}></i>
                 <p>HTML</p>
