@@ -4,6 +4,8 @@ import Home from "./components/Home"
 import Nav from "./components/Nav"
 import SkillList from "./components/SkillList"
 import Resume from "./components/Resume"
+import About from "./components/About"
+import Contact from "./components/Contact"
 
 export default function App() {
     return (
@@ -16,6 +18,12 @@ export default function App() {
             <h2 id="resume">Resume</h2>
             <hr></hr>
             <Resume />
+            <h2 id="about">About</h2>
+            <hr></hr>
+            <About />
+            {/* <h2 id="contact">Contact</h2>
+            <hr></hr> */}
+            <Contact />
         </div>
     )
 }
