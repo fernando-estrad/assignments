@@ -1,5 +1,5 @@
 import React from "react"
-import bgIMG from "../images/bg-img.jpg"
+import bgIMG from "../images/Fernando-Estrada-Resume.pdf"
 
 export default function Resume(){
     return (

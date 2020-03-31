@@ -38,6 +38,7 @@ nav {
     align-items: center;
     height: 100%;
     list-style: none;
+    /* transition: all 2s ease-in; */
 }
 
 .nav-list li a {
@@ -53,14 +54,35 @@ nav {
     color: #c46155;
 }
 
+.nav-list.open {
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 245, 245, 0.95);
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+}
+
+.nav-list.open li {
+    width: 100%;
+    margin: 1.5rem;
+}
+
 .hamburger {
+    color: rgb(57, 57, 57);
     font-size: 30px;
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translate(-10px, -50%);
     cursor: pointer;
+    padding: 0px 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(57, 57, 57);
+    background: none;
     display: none;
+    outline: none;
 }
 
 .home {
@@ -208,7 +230,7 @@ h3 {
 
 .download-resume{
     margin: 6rem auto;
-    width: 100%;
+    width: 70%;
 }
 
 .download-resume > a {
@@ -280,8 +302,22 @@ h3 {
         padding: 0 10px;
     }
 
+    .download-resume > a {
+        padding: 20px 40px;
+    }
+
+    .about-div {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-div > img{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
     .about-text {
-        font-size: 5px;
+        font-size: 16px;
     }
 }
 

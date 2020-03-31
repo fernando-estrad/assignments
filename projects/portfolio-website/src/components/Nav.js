@@ -1,11 +1,27 @@
-import React, {useState} from "react"
+import React from "react"
+
 
 export default function Nav(){
-    const [navClass, setNavClass] = useState("full-nav")
+    
+    const handleClick = () => {
+        const navList = document.getElementById("navList")
+        navList.classList.toggle("open")
+        console.log(navList.classList)
+    }
+
+    const NormalNav = () => {
+        const navList = document.getElementById("navList")
+        if (window.innerWidth >= 650 && navList.classList.contains("open")){
+            console.log("big")
+            navList.classList.remove("open")
+        }
+    }
+
+    window.addEventListener("resize", NormalNav)
 
     return (
-        <nav className={navClass}>
-            <ul className="nav-list">
+        <nav>
+            <ul className="nav-list" id="navList">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -22,9 +38,9 @@ export default function Nav(){
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-            <div className="hamburger">
+            <button className="hamburger" onClick={handleClick}>
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </nav>
     )
 }

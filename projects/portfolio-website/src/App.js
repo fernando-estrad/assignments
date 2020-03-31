@@ -21,8 +21,6 @@ export default function App() {
             <h2 id="about">About</h2>
             <hr></hr>
             <About />
-            {/* <h2 id="contact">Contact</h2>
-            <hr></hr> */}
             <Contact />
         </div>
     )
